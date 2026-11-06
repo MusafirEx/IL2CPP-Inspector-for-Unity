@@ -1,0 +1,12 @@
+{
+  "name": "com.musafirex.il2cpp-inspector",
+  "version": "0.1.0",
+  "displayName": "IL2CPP Inspector for Unity",
+  "description": "Editor-only APK/XAPK IL2CPP metadata inspection and optional Ghidra headless analysis.",
+  "unity": "2022.3",
+  "keywords": ["il2cpp", "apk", "xapk", "reverse-engineering", "ghidra", "unity-editor"],
+  "author": {
+    "name": "MusafirEx",
+    "url": "https://github.com/MusafirEx"
+  }
+}
