@@ -86,15 +86,15 @@ namespace MusafirEx.IL2CPPInspector.Editor
                 using (new EditorGUILayout.HorizontalScope())
                 {
                     if (GUILayout.Button("1. Extract", GUILayout.Height(32)))
-                        Start(1);
+                        StartAnalysisStage(1);
                     if (GUILayout.Button("2. Il2CppDumper", GUILayout.Height(32)))
-                        Start(2);
+                        StartAnalysisStage(2);
                     if (GUILayout.Button("3. Ghidra", GUILayout.Height(32)))
-                        Start(3);
+                        StartAnalysisStage(3);
                 }
 
                 if (GUILayout.Button("Run all stages", GUILayout.Height(28)))
-                    Start(0);
+                    StartAnalysisStage(0);
             }
 
             EditorGUILayout.LabelField("Status", status);
@@ -136,7 +136,7 @@ namespace MusafirEx.IL2CPPInspector.Editor
             if (GUI.changed) Save();
         }
 
-        private void Start(int stage)
+        private void StartAnalysisStage(int stage)
         {
             if (task != null) return;
             Save();
